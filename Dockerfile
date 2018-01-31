@@ -35,4 +35,6 @@ RUN apt-get update && apt-get install -y \
     && curl -sS https://getcomposer.org/installer | php \
     && php composer.phar install --no-autoloader --no-scripts --no-suggest \
     && curl -sL https://deb.nodesource.com/setup_7.x | bash - \
-    && apt-get install nodejs
+    && apt-get install nodejs \
+    && npm i -g cross-env
+
