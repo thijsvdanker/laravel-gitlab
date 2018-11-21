@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -y \
 	    zip unzip\
 	    ntfs-3g\
 	    cifs-utils\
+	    gnupg\
     && docker-php-ext-install mbstring mcrypt pdo_mysql curl json intl gd xml zip bz2 opcache soap tidy bcmath \
     && pecl install xdebug \
     && docker-php-ext-enable xdebug \
