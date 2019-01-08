@@ -30,8 +30,6 @@ RUN apt-get update && apt-get install -y \
 	    cifs-utils\
 	    gnupg\
     && docker-php-ext-install mbstring mcrypt pdo_mysql curl json intl gd xml zip bz2 opcache soap tidy bcmath \
-    && pecl install xdebug \
-    && docker-php-ext-enable xdebug \
     && cd ~ \
     && curl -O https://raw.githubusercontent.com/laravel/laravel/master/composer.json \
     && curl -sS https://getcomposer.org/installer | php \
