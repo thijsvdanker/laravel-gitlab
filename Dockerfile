@@ -37,4 +37,5 @@ RUN apt-get update && apt-get install -y \
     && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
     && apt-get install nodejs -y \
     && npm i -g cross-env
+    && pear install PHP_CodeSniffer
 
