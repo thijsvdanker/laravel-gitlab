@@ -5,7 +5,6 @@ RUN apt-get update && apt-get install -y \
 	    git \
 	    libcurl4-gnutls-dev \
 	    libicu-dev \
-	    libmcrypt-dev \
 	    libvpx-dev \
 	    libjpeg-dev \
 	    libpng-dev \
