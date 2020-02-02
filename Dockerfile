@@ -24,13 +24,14 @@ RUN apt-get update && apt-get install -y \
 	    libpcre3-dev \
 	    libtidy-dev \
 	    software-properties-common \
+        libzip-dev \
 	    zip unzip\
 	    ntfs-3g\
 	    cifs-utils\
 	    gnupg\
-    && docker-php-ext-install mbstring mcrypt pdo_mysql curl json intl gd xml zip bz2 opcache soap tidy bcmath \
+    && docker-php-ext-install pdo_mysql json intl gd xml zip bz2 opcache soap tidy bcmath \
     && cd ~ \
-    && curl -O https://raw.githubusercontent.com/laravel/laravel/master/composer.json \
+    && curl -O https://raw.githubusercontent.com/laravel/laravel/v5.8.35/composer.json \
     && curl -sS https://getcomposer.org/installer | php \
     && php composer.phar install --no-autoloader --no-scripts --no-suggest \
     && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
