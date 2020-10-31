@@ -29,7 +29,7 @@ RUN apt-get update && apt-get install -y \
 	    ntfs-3g\
 	    cifs-utils\
 	    gnupg\
-    && docker-php-ext-install pdo_mysql json intl gd xml zip bz2 opcache soap tidy bcmath \
+    && docker-php-ext-install pdo_mysql json intl gd xml zip bz2 opcache soap tidy bcmath exif \
     && cd ~ \
     && curl -O https://raw.githubusercontent.com/laravel/laravel/v5.8.35/composer.json \
     && curl -sS https://getcomposer.org/installer | php \
