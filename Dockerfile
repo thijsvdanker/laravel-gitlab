@@ -1,4 +1,4 @@
-FROM thijsvandenanker/gitlab-ci-pipeline:7.4
+FROM thijsvandenanker/gitlab-ci-pipeline-php:7.4
 MAINTAINER Thijs van den Anker <thijs@bitsnbolts.nl>
 
 RUN apt-get update && apt-get install -y \
